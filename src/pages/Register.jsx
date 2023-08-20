@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -7,7 +9,8 @@ const Register = () => {
   };
   return (
     <>
-      <div className="bg-[#F4F7F8] py-24">
+    <Header/>
+      <div className="main bg-[#F4F7F8] py-24">
         <div className="container max-w-[1340px] mx-auto flex justify-center items-center">
           <div className="flex flex-col justify-center p-[50px] bg-white rounded w-[454px] shadow-lg">
             <h1 className="text-[28px] font-bold mb-[30px]">Регистрация</h1>
@@ -73,6 +76,7 @@ const Register = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

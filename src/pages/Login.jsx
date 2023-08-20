@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import axios from "axios"
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -12,7 +14,8 @@ const Login = () => {
   };
   return (
     <>
-      <div className="bg-[#F4F7F8] py-24">
+    <Header/>
+      <div className="main bg-[#F4F7F8] py-24">
         <div className="container max-w-[1340px] mx-auto flex justify-center items-center">
           <div className="flex flex-col justify-center p-[50px] bg-white rounded w-[454px] shadow-lg">
             <h1 className="text-[28px] font-bold mb-[30px]">Авторизация</h1>
@@ -58,6 +61,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

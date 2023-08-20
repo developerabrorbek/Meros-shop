@@ -1,13 +1,16 @@
-// import Login from "./pages/Login"; 
+import Login from "./pages/Login";
 import Register from "./pages/Register";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-2xl font-semibold text-blue-700">App</h1>
-      {/* <Login/> */}
-      <Register/>
-    </div>
+    <>
+      <Routes>
+        <Route element={<Login />} path="/" />
+        <Route element={<Login />} path="/login" />
+        <Route element={<Register />} path="/register" />
+      </Routes>
+    </>
   );
 };
 
