@@ -10,8 +10,9 @@ import pin from "../assets/images/Pin.svg";
 const Header = () => {
   return (
     <>
-      <header className="px-[90px] pb-8">
-        <div className="flex justify-between border-b border-b-[#E8EDF1]">
+      <header className="">
+       <div className="container mx-auto px-[90px] pb-8">
+       <div className="flex justify-between border-b border-b-[#E8EDF1]">
           <ul className="flex justify-between gap-7 py-[14px]">
             <li className="border-r border-r-[#E8EDF1] pr-[9px]">
               <Link
@@ -146,6 +147,7 @@ const Header = () => {
                 </li>
             </ul>
         </div>
+       </div>
       </header>
     </>
   );

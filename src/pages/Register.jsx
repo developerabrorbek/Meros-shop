@@ -10,6 +10,7 @@ const Register = () => {
   return (
     <>
     <Header/>
+      <div className="container mx-auto">
       <div className="main bg-[#F4F7F8] py-24">
         <div className="container max-w-[1340px] mx-auto flex justify-center items-center">
           <div className="flex flex-col justify-center p-[50px] bg-white rounded w-[454px] shadow-lg">
@@ -75,6 +76,7 @@ const Register = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
       <Footer/>
     </>

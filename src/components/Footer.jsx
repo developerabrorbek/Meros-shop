@@ -4,7 +4,8 @@ import appstore from "../assets/images/app-store.svg";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className="py-[30px] px-[90px] bg-[#ffffff]">
+    <footer className="bg-[#ffffff]">
+      <div className="container mx-auto px-[90px] py-[30px]">
       <div className="flex flex-col">
         <ul className="flex justify-between items-start border-b border-[#E8EDF1] pb-6">
           <li>
@@ -260,7 +261,7 @@ const Footer = () => {
         </ul>
         <p className=" m-auto mt-5"> Meros Shop © 2020. Все права защищены.</p>
       </div>
-      <div></div>
+      </div>
     </footer>
   );
 };
