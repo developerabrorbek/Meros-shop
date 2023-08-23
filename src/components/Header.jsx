@@ -109,6 +109,43 @@ const Header = () => {
             </li>
           </ul>
         </div>
+        <div className="mt-[25px]">
+            <ul className="flex justify-between ">
+                <li className="hover:text-[#114FEF]">
+                    <Link to="/book" >Книги</Link>
+                </li>
+                <li className="hover:text-[#114FEF]">
+                    <Link to="/book">Сувениры</Link>
+                </li>
+                <li className="hover:text-[#114FEF]">
+                    <Link to="/book">Дом и интерьер</Link>
+                </li>
+                <li className="hover:text-[#114FEF]">
+                    <Link to="/book">Красота и уход</Link>
+                </li>
+                <li className="hover:text-[#114FEF]">
+                    <Link to="/book">Идеи подарка</Link>
+                </li>
+                <li className="hover:text-[#114FEF]">
+                    <Link to="/book">Диски</Link>
+                </li>
+                <li className="hover:text-[#114FEF]">
+                    <Link to="/book">Атрибутика</Link>
+                </li>
+                <li className="hover:text-[#114FEF]">
+                    <Link to="/book">Продукты питания</Link>
+                </li>
+                <li className="hover:text-[#114FEF]">
+                    <Link to="/book">Парфюмерия</Link>
+                </li>
+                <li className="hover:text-[#114FEF]">
+                    <Link to="/book">Meros Мерч Бренд</Link>
+                </li>
+                <li className="hover:text-[#114FEF]">
+                    <Link to="/book">Meros Дисконт</Link>
+                </li>
+            </ul>
+        </div>
       </header>
     </>
   );
