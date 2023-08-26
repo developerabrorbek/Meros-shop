@@ -1,5 +1,8 @@
 import Product1 from "../assets/images/product1.jpg";
 import FavoriteImages from "../assets/images/Favorites-icon.svg";
+import Viewed from "../assets/images/visibility.svg";
+import Favotite from "../assets/images/favorite.svg";
+import Basket from "../assets/images/basket.svg";
 
 const ProductCard = () => {
   return (
@@ -7,7 +10,7 @@ const ProductCard = () => {
       <div className="product-card h-[377px] relative hover:shadow-lg transition-all p-2 rounded-sm">
         <div className="product-image relative mb-[10px]">
           <img src={Product1} alt="product image" />
-          <span className="absolute bottom-0 left-0 py-1 px-3  text-white rounded-md bg-[#F5921C] text-[18px] font-bold text-center">
+          <span className="absolute bottom-0 left-0 px-2  text-white rounded-md bg-[#F5921C] text-[18px] font-bold text-center">
             -54%
           </span>
         </div>
@@ -23,7 +26,9 @@ const ProductCard = () => {
           </div>
           <div className="product-price absolute bottom-2">
             <h3 className="text-2xl text-[#32386B] font-bold">120 000 сум</h3>
-            <span className="discount line-through text-[#8D909B]">220 000 сум</span>
+            <span className="discount line-through text-[#8D909B]">
+              220 000 сум
+            </span>
           </div>
         </div>
       </div>
