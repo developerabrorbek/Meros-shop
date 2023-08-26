@@ -1,6 +1,6 @@
 import logo from "../assets/images/logo.svg";
 import basket from "../assets/images/shopping-cart.svg";
-import favorite from "../assets/images/Favorites-icon.svg";
+import favoriteIcon from "../assets/images/favorite.svg";
 import profile from "../assets/images/Profile-icon.svg";
 import down from "../assets/images/down-icon.svg";
 import search from "../assets/images/search-icon.svg";
@@ -98,7 +98,7 @@ const Header = () => {
             </li>
             <li className="">
               <Link to="/favorite" className="flex items-center justify-between gap-3">
-                <img src={favorite} alt="favourites" width={24}/>
+                <img src={favoriteIcon} alt="favourites" width={24}/>
                 <p className="text-[#273142]">Избранное</p>
               </Link>
             </li>
