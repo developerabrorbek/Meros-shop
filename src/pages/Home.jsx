@@ -7,6 +7,9 @@ import HeroBanners from "../components/HeroBanners";
 import SectionTitle from "../components/SectionTitle";
 import ProductCard from "../components/ProductCard";
 import AdvertImage from "../assets/images/advertisement.png";
+import DeliveryImage from "../assets/images/delivery.png"
+import ApplicationImg from "../assets/images/application.png"
+import CreditCardImg from "../assets/images/credit-card.png"
 
 const Home = () => {
   return (
@@ -81,7 +84,35 @@ const Home = () => {
         </div>
       </section>
 
-      
+      <section className="services bg-[#F4F7F8]">
+        <div className="container mx-auto px-[90px]">
+          <div className="services__inner py-[50px]">
+            <ul className="grid grid-cols-3 gap-x-[30px]">
+              <li className="flex items-center border-[0.5px] border-[#8D909B] border-opacity-50 rounded-[4px]">
+                <div className="card-body pl-8">
+                  <h3 className="text-[22px] font-semibold mb-12">Доставка по всему Узбекистану</h3>
+                  <a href="#" className="text-[18px] text-[#8D909B] ">Условия доставки</a>
+                </div>
+                <img src={DeliveryImage} alt="Delivery image" />
+              </li>
+              <li className="flex  border-[0.5px] border-[#8D909B] border-opacity-50 rounded-[4px]">
+                <div className="card-body pt-[25px] pl-8">
+                  <h3 className="text-[22px] font-semibold mb-6">Установите мобильное приложение</h3>
+                  <a href="#" className="text-[18px] text-[#8D909B] ">Установить</a>
+                </div>
+                <img src={ApplicationImg} alt="Delivery image" />
+              </li>
+              <li className="flex border-[0.5px] border-[#8D909B] border-opacity-50 rounded-[4px]">
+                <div className="card-body pt-[25px] pl-8">
+                  <h3 className="text-[22px] font-semibold mb-6">Оплата наличными или картой</h3>
+                  <a href="#" className="text-[18px] text-[#8D909B] ">Условия оплаты</a>
+                </div>
+                <img src={CreditCardImg} alt="Delivery image" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </>
