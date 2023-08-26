@@ -11,21 +11,21 @@ const ProductCard = () => {
   const elFavorite = useRef(null);
 
   const handleMouseMove = () => {
-    elBasket.current.classList.remove("-left-12", "slide-left");
-    elBasket.current.classList.add("slide-right");
-    elFavorite.current.classList.remove("-left-12", "slide-left");
-    elFavorite.current.classList.add("slide-right");
-    elWatch.current.classList.remove("-left-12", "slide-left");
-    elWatch.current.classList.add("slide-right");
+    elBasket.current.classList.remove("-left-12", "animate-left");
+    elBasket.current.classList.add("animate-right");
+    elFavorite.current.classList.remove("-left-12", "animate-left");
+    elFavorite.current.classList.add("animate-right");
+    elWatch.current.classList.remove("-left-12", "animate-left");
+    elWatch.current.classList.add("animate-right");
   };
 
   const handleMouseLeave = () => {
-    elBasket.current.classList.remove("slide-right");
-    elBasket.current.classList.add("slide-left");
-    elFavorite.current.classList.remove("slide-right");
-    elFavorite.current.classList.add("slide-left");
-    elWatch.current.classList.remove("slide-right");
-    elWatch.current.classList.add("slide-left");
+    elBasket.current.classList.remove("animate-right");
+    elBasket.current.classList.add("animate-left");
+    elFavorite.current.classList.remove("animate-right");
+    elFavorite.current.classList.add("animate-left");
+    elWatch.current.classList.remove("animate-right");
+    elWatch.current.classList.add("animate-left");
   };
   let cardActionButtons = (
     <>
