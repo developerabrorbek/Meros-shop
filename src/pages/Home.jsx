@@ -9,6 +9,7 @@ import Product1 from "../assets/images/product1.jpg";
 import SmallBanners from "../components/SmallBanners";
 import HeroBanners from "../components/HeroBanners";
 import SectionTitle from "../components/SectionTitle";
+import ProductCard from "../components/ProductCard";
 
 const Home = () => {
   return (
@@ -33,9 +34,24 @@ const Home = () => {
         <div className="container mx-auto px-[90px]">
           <div className="offers__inner">
             <SectionTitle title="Лучшие предложения!" />
+            <ul className="grid grid-cols-5 gap-7">
+              <aside className="row-span-2">
+                <img src={AsideImg} alt="Aside image" className="h-[780px]"/>
+              </aside>
+              <ProductCard/>
+              <ProductCard/>
+              <ProductCard/>
+              <ProductCard/>
+              <ProductCard/>
+              <ProductCard/>
+              <ProductCard/>
+            </ul>
           </div>
         </div>
       </section>
+
+
+
 
       <Footer />
     </>
