@@ -171,7 +171,7 @@ const Home = () => {
               </div>
             </div>
             <ul className="grid grid-cols-5 gap-7">
-              <li className="bg-[#F4F7F8] rounded h-[286px]">
+              <li className="bg-[#F4F7F8] hover:shadow-md transition-shadow rounded h-[286px]">
                 <div className="image flex items-center justify-center h-[198px]">
                   <img src={BooksImg} alt="Book category image" />
                 </div>
@@ -179,7 +179,7 @@ const Home = () => {
                   Книги
                 </h4>
               </li>
-              <li className="bg-[#F4F7F8] rounded h-[286px]">
+              <li className="bg-[#F4F7F8] hover:shadow-md transition-shadow  rounded h-[286px]">
                 <div className="image flex items-center justify-center h-[198px]">
                   <img src={SofaImg} alt="Book category image" />
                 </div>
@@ -187,7 +187,7 @@ const Home = () => {
                   Дом и интерьер
                 </h4>
               </li>
-              <li className="bg-[#F4F7F8] rounded h-[286px]">
+              <li className="bg-[#F4F7F8] hover:shadow-md transition-shadow  rounded h-[286px]">
                 <div className="image flex items-center justify-center h-[198px]">
                   <img src={BooksImg} alt="Book category image" />
                 </div>
@@ -195,7 +195,7 @@ const Home = () => {
                   Книги
                 </h4>
               </li>
-              <li className="bg-[#F4F7F8] rounded h-[286px]">
+              <li className="bg-[#F4F7F8] hover:shadow-md transition-shadow  rounded h-[286px]">
                 <div className="image flex items-center justify-center h-[198px]">
                   <img src={SofaImg} alt="Book category image" />
                 </div>
@@ -203,7 +203,7 @@ const Home = () => {
                   Дом и интерьер
                 </h4>
               </li>
-              <li className="bg-[#F4F7F8] rounded h-[286px]">
+              <li className="bg-[#F4F7F8] hover:shadow-md transition-shadow  rounded h-[286px]">
                 <div className="image flex items-center justify-center h-[198px]">
                   <img src={BooksImg} alt="Book category image" />
                 </div>

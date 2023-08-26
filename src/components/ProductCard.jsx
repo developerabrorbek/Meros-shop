@@ -1,13 +1,65 @@
 import Product1 from "../assets/images/product1.jpg";
 import FavoriteImages from "../assets/images/Favorites-icon.svg";
 import Viewed from "../assets/images/visibility.svg";
-import Favotite from "../assets/images/favorite.svg";
+import Favorite from "../assets/images/card-favorite.svg";
 import Basket from "../assets/images/basket.svg";
+import { useRef } from "react";
 
 const ProductCard = () => {
+  const elBasket = useRef(null);
+  const elWatch = useRef(null);
+  const elFavorite = useRef(null);
+
+  const handleMouseMove = () => {
+    elBasket.current.classList.remove("-left-12", "slide-left");
+    elBasket.current.classList.add("slide-right");
+    elFavorite.current.classList.remove("-left-12", "slide-left");
+    elFavorite.current.classList.add("slide-right");
+    elWatch.current.classList.remove("-left-12", "slide-left");
+    elWatch.current.classList.add("slide-right");
+  };
+
+  const handleMouseLeave = () => {
+    elBasket.current.classList.remove("slide-right");
+    elBasket.current.classList.add("slide-left");
+    elFavorite.current.classList.remove("slide-right");
+    elFavorite.current.classList.add("slide-left");
+    elWatch.current.classList.remove("slide-right");
+    elWatch.current.classList.add("slide-left");
+  };
+  let cardActionButtons = (
+    <>
+      <div className="actions flex flex-col gap-2 w-8 absolute top-8 left-3 z-20">
+        <div
+          ref={elWatch}
+          className="watch flex cursor-pointer relative -left-12 items-center transition-all justify-center p-2 rounded bg-[#666666] hover:bg-[#F5921C]"
+        >
+          <img src={Viewed} alt="Watch icon" />
+        </div>
+        <div
+          ref={elFavorite}
+          className="favorite flex cursor-pointer relative  -left-12 items-center transition-all justify-center p-2 rounded bg-[#666666] hover:bg-[#F5921C]"
+        >
+          <img src={Favorite} alt="Favorite icon" />
+        </div>
+        <div
+          ref={elBasket}
+          className="basket flex cursor-pointer relative  -left-12 items-center transition-all justify-center p-2 rounded bg-[#666666] hover:bg-[#F5921C]"
+        >
+          <img src={Basket} alt="Basket icon" />
+        </div>
+      </div>
+    </>
+  );
+
   return (
     <>
-      <div className="product-card h-[377px] relative hover:shadow-lg transition-all p-2 rounded-sm">
+      <div
+        onMouseOver={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        className="product-card overflow-hidden h-[377px] relative hover:shadow-lg transition-all p-2 rounded-sm"
+      >
+        {cardActionButtons}
         <div className="product-image relative mb-[10px]">
           <img src={Product1} alt="product image" />
           <span className="absolute bottom-0 left-0 px-2  text-white rounded-md bg-[#F5921C] text-[18px] font-bold text-center">
