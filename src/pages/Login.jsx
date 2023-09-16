@@ -1,19 +1,13 @@
 import { Link } from "react-router-dom";
-import axios from "axios";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Toastify from "../utils/ToastUtils";
 const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const values = e.target;
-    const { data } = await axios.post(
-      "http://10.10.1.63:5005/api/v1/auth/login",
-      {
-        phone: values.phone.value,
-        password: values.password.value,
-      }
-    );
-    console.log(data);
+    console.log(values)
+    Toastify.successMessage("muvaffaqqiyatli ruyhatdan utdigiz")
   };
   return (
     <>
