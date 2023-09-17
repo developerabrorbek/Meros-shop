@@ -1,26 +1,26 @@
-import { toast }  from "react-toastify";
+import { toast } from "react-toastify";
 
-
-
-class Toastify{
-    succesMessage(msg){
-    toast.success(msg);
-    } 
-    errorMessage(msg){
-        toast.error(msg);
-    }
-    warningMessage(msg){
-        toast.warn(msg);
-    }
-    promise(msg){
-        toast.promise(
-            msg,{
-                pending:"pending",
-                error:"error",
-                success:"success"
-            }
-
-        )
-    }
+class Toastify {
+	succesMessage(msg) {
+		toast.success(msg);
+	}
+	errorMessage(msg) {
+		toast.error(msg);
+	}
+	warningMessage(msg) {
+		toast.warn(msg);
+	}
+	promise(
+		promiseFnc,
+		pendingMsg = "pending",
+		errorMsg = "error",
+		successMsg = "success"
+	) {
+		toast.promise(promiseFnc, {
+			pending: pendingMsg,
+			error: errorMsg,
+			success: successMsg,
+		});
+	}
 }
 export default new Toastify();

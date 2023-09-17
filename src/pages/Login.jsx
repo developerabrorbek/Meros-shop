@@ -7,7 +7,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const values = e.target;
-    Toastify.warningMessage("aaaa");
+    Toastify.promise( new Promise((resolve) => setTimeout(resolve, 3000)));
     const { data } = await axios.post(
       "http://10.10.1.63:5005/api/v1/auth/login",
       {
